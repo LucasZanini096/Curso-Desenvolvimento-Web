@@ -1,0 +1,60 @@
+/******************
+Herança e especificidade */
+
+
+/*Não é aconselhável declarar formatações mais específicas 
+dentro da utilização da herança*/
+
+
+body {
+
+	color: red;
+	border: 1px solid blue;
+	background: gray;
+}
+
+
+/*Por padrão border e background não são herdados !!--> */
+
+p {
+	color: blue;
+}
+
+p {
+	color: red;
+}
+
+/*No caso de dois seletores iguais, sempre o último é que vai ser aplicado*/
+
+p {
+	color: blue !important;  /*Já neste caso o esse seletor será aplicado,
+	pois há a palavra important, dando-lhe um maior grau de importância*/
+}
+
+p {
+	color: red;
+}
+
+
+
+/* Se um seletor for mais específico que outro
+a regra mais específica será aplicada 
+(terá precedência sobre regras mais gerais)
+*/
+
+* {
+	color: red;
+}
+
+h2 {
+	color: blue;
+}
+
+h2.verde {  /*Sempre junto !!! -> None da Tag.Nome da Classe*/
+	color: green;
+}
+h2#amarelo { /*Seletor mais específico*/
+	color: yellow;
+}
+
+/*Não importa a ordem de declaração dos seletores*/

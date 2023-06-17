@@ -1,0 +1,73 @@
+/*Coluna Falsa*/
+/*Não é possível aplicar esse efeito num layout Líquido*/
+
+body {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+#conteiner {
+
+  widht: 960px; /* Se colocar um valor em porcentagem, o conteiner irá quebrar*/
+  margin: 0 auto;
+  background: #fff url(../imagens/coluna.png) repeat-y left top; /*Coluna Falsa*/
+  min-width: 720px ; 
+  max-widht: 1280px; 
+}
+
+#conteudo {
+  widht: 75%;
+  float: right
+}
+
+
+#conteudo-principal {
+  widht: 64%;
+  float: left;
+}
+
+img.img-noticia {
+  widht: 96%;
+  padding: 2%;
+  max-width: 600px;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+
+} 
+#conteudo-secundario {
+  widht: 34%px;
+  float: right;
+  background: #d1d1d1;
+}
+#marca {
+  widht: 100%; 
+  height: 200px;
+  background: #225992 url(../imagens/cabecalho2.png) no-repeat center; 
+  float: right;
+  text-align: center;
+  line-height: 200px;
+  
+}
+
+#navegacao {
+
+  widht: 23%px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d1d1d1;
+           
+}
+
+#rodape {
+
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}

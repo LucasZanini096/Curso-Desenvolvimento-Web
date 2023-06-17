@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Estilizando Formulários</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h2>Estilizando Formulários</h2>
+
+  <form>
+    
+     <fieldset> <!--São utilizados para agrupar dados semelhantes-->
+       <legend> <!-- Declaração de uma legenda para os dados agrupados/semelhantes-->
+
+         <div>
+         <!--  
+           <label for="nome">Nome</label> <!-- Propriedade utilizada para identificar as caixas de texto-->
+          <!-- O atributo "for" permite associar uma label(etiqueta) com um ID percente a uma TAG, na qual esteja relacionada com a Tag label-->
+         <!--  <input type="text" name="nome" id="nome" >  -->
+
+           <!-- Outra Maneira-->
+
+           <label>Nome:
+           <input type="text" name="nome" id="nome">
+           </label> <!--Neste caso eu não necessito declarar o for dentro de Lable, pois ele já está envovendo o input-->
+          
+         
+         
+         </div>
+
+          <div>
+         <label>Email:
+           <input type="text" name="email" id="email">
+           </label> <!--Neste caso eu não necessito declarar o for dentro de Lable, pois ele já está envovendo o input-->
+         </div>
+
+          <div>
+         <label>URL:
+           <input type="text" name="url" id="url">
+           </label> <!--Neste caso eu não necessito declarar o for dentro de Lable, pois ele já está envovendo o input-->
+         </div>
+       
+       </legend> 
+     </fieldset>
+
+    <fieldset>
+
+      <legend>Comentários</legend>
+      <div>
+        <label for="mensagem"> Mensagem:</label
+        <textarea name="mensagem" id="mensagem"></textarea>                                  
+      </div>
+      
+    </fieldset>
+
+    <fieldset>
+      <legend>Lembrar de mim</legend>
+      <div>
+        <label>
+          <input class ="radio" type="radio" name='lembrar' id="sim">Sim
+        </label> 
+      </div>
+
+      <div>
+        <label>
+          <input class="radio" type="radio" name='lembrar' id="nao">Não
+        </label> 
+      </div>
+    </fieldset>
+
+    
+
+    
+  </form>
+
+</body>
+
+</html>

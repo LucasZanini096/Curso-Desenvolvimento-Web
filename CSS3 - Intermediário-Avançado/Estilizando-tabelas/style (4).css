@@ -1,0 +1,39 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+  widht: 600px;
+  border-collapse: collapse; /*Esta propriedade permite eu colapsar (juntar) as bordas de uma tabela HTML. Ou seja, uma borda fica em cima de outra neste caso*/
+  /*Por padrão as bordas de uma tabela estão serparadas*/
+}
+
+th, td {
+  border: 1px slid red;
+  padding: 7px;
+  
+}
+
+th {
+  text-transform: uppercase;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #111;
+  text-align: left; /*Movo o texto para a esquerda*/
+  font-size: 90%; /*Deixo o tamanho do texto com 90% do tamanho original*/
+  letter-spacing: 0.1em; /*Propriedade que permite adicionar um espaçamento entre as letras de uma palavra*/ 
+  
+  /*Propriedade que permite eu formatar textos*/
+  
+}
+
+tr.alternado {
+  background-color: #efefef;
+}
+
+tr:hover {
+  background-color: #c3e6e5;
+} /*Posso aplicar uma coloração quando eu passo o mouse sobre o conteúdo(linha) da tabela*/
+
+.numero {
+  text-align: right;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			
+
+			<title></title>
+
+    </head>
+
+	<style type="text/css">
+		
+		/*
+        .fundo{
+
+        	background: red;
+        	
+        }*/
+
+        /* A propriedade background-image: url("") permite eu coocar uma imagem de fundo (background) na página de meu site. Dentro da url devo colocar o endereço web da imagem ou seu endereço na memória. Caso ela não consiga preencher toda a página, vai ocorrer a sua repetição na horizontal e na vertical */
+
+        /*A propriedade background-repeat denomina a repetição de determinada imagem declarada em background-image. Posso repetir apenas no eixo y, eixo x ou apenas não repetir.*/
+
+        /* A propriedade background-attachment permite fixar uma imagem na página. Ou seja, quando eu realizo o scrol da página, ela fica fixa em um determinado local (fixed ou scroll).*/
+
+        /* A propriedade background-position permite eu realocar uma imagem para um local específico do site. No primeiro espaço eu coloco sua posição no eixo horizontal (left, center e right) e no segundo a sua posição no eixo vertical (top, center e bottom)*/
+
+        body {
+
+        	background-image: url(Imagens/Yoshi.png);
+        	background-repeat: no-repeat;
+        	background-attachment: fixed ;
+        	background-position: center bottom ;
+
+
+
+        }
+
+        /* Posso colocar mais de um parâmetro
+        dentro da propriedade background, apenas dando um espaço para separar os parâmetros/sub-propriedades*/  
+
+        .fundo{
+        	background: blue url('Imagens/Yoshi.png') repeat-x scroll top;
+        }
+
+
+
+
+
+
+	</style>
+
+
+
+
+<body class="fundo">
+
+    <h1>Conteúdo de Título 1</h1>
+
+
+
+</body>
+
+
+
+</html>

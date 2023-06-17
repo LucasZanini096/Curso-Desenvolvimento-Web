@@ -1,0 +1,26 @@
+/*ARRENDONDAMENTO DE IMAGENS*/
+
+
+.caixa {
+
+	width: 400px;
+	background: #dedede url(../imgaens/topo.png) no-repeat top left;
+
+}
+
+
+.caixa p {
+	background: url(../imagens/baixo.png) no-repeat left bottom;
+}
+
+
+
+.caixa h2 {
+
+	padding: 10px 20px 0 20px;
+}
+
+.caixa p {
+	padding: 0 20px 20px 20px;
+	background: url(../imagens/baixo.png) no-repeat left bottom;
+}

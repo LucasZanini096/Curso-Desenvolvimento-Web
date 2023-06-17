@@ -1,0 +1,38 @@
+/*Estilizando formulários*/
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block; /*Originalmente era um elemento inline*/
+  cursor: pointer; /*Posso mudar a visualização do cursor*/
+}
+
+input [type = "text"] { /*Estou definindo o tipo de input -> é um seletor que funciona apenas em */
+  widht: 20em
+}
+
+textarea {
+  widht: 20em;
+  height: 10em;
+}
+
+input.radio, input.checkbox , input.submit {
+  widht: auto;
+}
+
+.radio {
+  margin-right: 1em;
+}
