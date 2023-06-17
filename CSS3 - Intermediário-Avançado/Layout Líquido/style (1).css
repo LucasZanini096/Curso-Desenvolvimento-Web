@@ -1,0 +1,65 @@
+/*Layouts Líquidos*/
+/*Layouts líquidos utilizam porcentagem para definir o tamanho de seus componentes*/
+
+
+body {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+#conteiner {
+
+  widht: 90%; /*Vai ocupar 100% do espaçamento da tela*/
+  margin: 0 auto;
+  background: #fff;
+  min-width: 720px ; /*Permite definir uma largura mínima - Vai parar de reduzir a largura em determinado ponto*/
+  max-widht: 960px; /*Permite a declaração de uma largura máxima - Vai expandir até determinado ponto*/
+}
+
+#conteudo {
+  widht: 75%;
+  float: right
+}
+
+
+#conteudo-principal {
+  widht: 64%;
+  float: left;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+
+} 
+#conteudo-secundario {
+  widht: 34%px;
+  float: right;
+  background: #d1d1d1;
+}
+#marca {
+  widht: 100%; /*Uma div por padrão, ocupa 100% de seu espaço declarado*/
+  height: 100px;
+  background: #9E9E9E;
+  float: right
+}
+
+#navegacao {
+
+  widht: 23%px;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #d1d1d1;
+           
+}
+
+#rodape {
+
+  clear: both;
+  background: #c4c4c4;
+  padding: 5px;
+}

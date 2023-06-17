@@ -1,0 +1,97 @@
+/*Efeito Parallax*/
+
+
+
+/*Configurações da página/Body*/
+
+body, html {
+	margin: 0;
+	font: 16px "Lato", sans-serif;
+	color: #777;
+	height: 100%; /*Esse é o truque que envolve o Parallax, sendo a 
+	ocupação em 100% da tela por uma imagem
+    O Body e Html vai expandir para 100% da tela.
+	*/
+}
+
+.conteudo {
+	color: #777;
+	background-color: white;
+    text-align: justify; /*O texto via ficar justificado*/
+    /*Justify -> Estica as linhas para que cada linha tenha a mesma largura
+    como em revistas e jornais)*/
+    padding: 50px 80px;
+}
+
+    h3 {
+    	text-transform: upercase; /*Text-Transform -> permite 
+    	fazer formatações em textos. 
+    	Upercase -> permite deixar em negrito o texto formatado*/
+        color: #111;
+        text-align: center;
+}
+
+
+/*Efeito Parallax*/
+
+.caixa1, .caixa2, .caixa3, .caixa4 { /*Formatação mais genérica*/
+      
+      position: realative;
+      height: 100%; /*O conteúdo pertencente à essas caixas 
+      vão ocupar 100% da tela*/
+      opacity: 0.7 ;
+
+      /*Opacity -> permite eu aplicar um efeito de opacidade num 
+      determinado bloco (imagem/texto). Quanto o menor valor aplicado, maior
+      a intensidade da opacidade*/
+
+      background-repeat: no-repeat; /*Vai impedir a repetição da imagem 
+      de acordo com o tamanho da tela do usuário*/
+      background-size: cover; /*Permite uma imagem cobra todo o tamanho
+      de uma área específica.  */
+
+      background-position: center; /*Permite que a imagem fique centralizada*/
+      
+      background-attachment: fixed ; /*Background-attachment -> permite a aplicação
+      de determinadas características a um background. 
+      Fixed -> Deixa fixo o background com o scroll da tela*/
+}
+
+.caixa1 {
+	background-image: url(imagens/imagem1.jpg);
+}
+
+.caixa2 {
+	background-image: url(imagens/imagem2.jpg);
+}
+
+.caixa3 {
+	background-image: : url(imagens/imagem3.jpg);
+}
+
+.caixa4 {
+	background-image: url(imagens/imagem4.jpg);
+}
+
+
+.conteudo-titulo {
+
+	posistion: absolute;
+	left: 0%
+	top: 45%;
+	width: 100%; /*Vai ocupar a faixa central da tela*/	
+}
+
+
+.conteudo-titulo span.titulo {
+
+	color: #fff;
+	background-color: #111;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px; /*Propriedade que me permite aplicar
+	um espaçamento entre as palavras de um texto*/
+	text-align: center; 
+	text-transform: uppercase;
+	
+}
