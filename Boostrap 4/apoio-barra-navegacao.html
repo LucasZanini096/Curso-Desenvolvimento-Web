@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - botões</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navegação
+    Tipos de navegação:
+        nav-pills -> Vai aplicar um arredondamento nos itens ativos
+        nav-tabs -> Aplica uma navegação por abas
+    opções de alinhamento: 
+        justify-content-center -> Alinha ao centro
+        justify-content-end -> Alinha à direita
+        flex-column -> Coloca a barra de navegação na vertical
+    -->
+    <h2>Navegação simples / abas</h2>
+    <ul class="nav nav-pills flex-column"> <!-- Todos os itens da lista vão ficar em inline-->
+      <li class="nav-item">
+        <a href="" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link disabled">Home</a>
+      </li>
+    </ul>
+    
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light"> 
+      <!-- navbar-expand expande os itens da navbar, colocando-os todos alinhados à horizontal -->
+      <!-- navbar-light/dark -> defino uma color para os caracteres do meu texto, de acordo com meu background -->
+      <!--bg-dark -> defino uma background para a barra de navegação --> 
+          
+          <!-- Logo -->
+          <a href="" class="navbar-brand">Chalé Hotel</a>
+
+          <!-- Navegação -->
+          <ul class="navbar-nav ml-auto"> <!-- Todos os itens vão para a direita -->
+            <li class="nav-item">
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Serviços</a>
+            </li>
+          </ul>
+
+    </nav>
+    
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    <!-- Formação de um menu hamburguer -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+      <!-- Navbar-expand-Sm -> responsável pela responsividade da barra de navegação -->
+      
+          
+          <!-- Logo -->
+          <a href="" class="navbar-brand">Chalé Hotel</a>
+
+          <!--Menu Hamburguer -->
+          <button class="navbar-toggler" data-toggle="collpase" data-target="#nav-target"> 
+            <!--Criando botão -->
+            <!-- Para aparacer os itens da minha lista devo colocar data-toggle e data-target -->
+                  <span class="navbar-toggler-icon"></span> 
+                  <!--Formatando botão. Aparace a partir de determinado widht da tela -->
+
+          </button>
+
+          <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target"> <!--Irá colapsar todos os itens da barra de navegação -->
+            <ul class="navbar-nav ml-auto"> <!-- Todos os itens vão para a direita -->
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Serviços</a>
+                </li>
+            </ul>
+        </div>
+
+      </nav>
+
+
+    <h2>Barra de navegação com formulário</h2>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+      <!-- Navbar-expand-Sm -> responsável pela responsividade da barra de navegação -->
+      
+          
+          <!-- Logo -->
+          <a href="" class="navbar-brand">Chalé Hotel</a>
+
+          <!--Menu Hamburguer -->
+          <button class="navbar-toggler" data-toggle="collpase" data-target="#nav-target"> 
+            <!--Criando botão -->
+            <!-- Para aparacer os itens da minha lista devo colocar data-toggle e data-target -->
+                  <span class="navbar-toggler-icon"></span> 
+                  <!--Formatando botão. Aparace a partir de determinado widht da tela -->
+
+          </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target"> <!--Irá colapsar todos os itens da barra de navegação -->
+            <ul class="navbar-nav ml-auto"> <!-- Todos os itens vão para a direita -->
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Serviços</a>
+                </li>
+            </ul>
+
+          </div>
+
+        <!--Formulário-->
+        <!-- Coloco dentro da nav/div configurada como navbar, a fim de 
+          obter as configurações já realizadas, que neste caso é a não aparição do formulário em determinado width -->
+        <form class="form-inline">
+
+              <input type="text" class="form-control" placeholder="pesquisar...">
+
+              <button class="btn btn-outline-success"></button>
+        </form>
+
+   
+      </nav>
+
+    
+    <h2>Barra de navegação com menu dropdown</h2>
+         <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+      <!-- Navbar-expand-Sm -> responsável pela responsividade da barra de navegação -->
+      
+          
+          <!-- Logo -->
+          <a href="" class="navbar-brand">Chalé Hotel</a>
+
+          <!--Menu Hamburguer -->
+          <button class="navbar-toggler" data-toggle="collpase" data-target="#nav-target"> 
+            <!--Criando botão -->
+            <!-- Para aparacer os itens da minha lista devo colocar data-toggle e data-target -->
+                  <span class="navbar-toggler-icon"></span> 
+                  <!--Formatando botão. Aparace a partir de determinado widht da tela -->
+
+          </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target"> <!--Irá colapsar todos os itens da barra de navegação -->
+            <ul class="navbar-nav ml-auto"> <!-- Todos os itens vão para a direita -->
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link dropdown-toggle" data-toogle ="dropdown">Serviços</a> <!--Data-toogle -> me permite formatar formulários -->
+
+                  <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Serviço 1</a>
+                    <a href="" class="dropdown-item">Serviço 2</a>
+                    <a href="" class="dropdown-item">Serviço 3</a>
+                  </div>
+
+
+
+                </li>
+            </ul>
+
+          </div>
+
+        </nav>
+    
+    
+    <!--Cores
+    opções: bg-primary, bg-secondary, bg-success, bg-info,
+    bg-warning, bg-danger, bg-light, bg-dark
+    -->
+    <h2>Cores</h2>
+
+     <nav class="navbar navbar-expand-sm navbar-dark bg-primary"> 
+      <!-- Navbar-expand-Sm -> responsável pela responsividade da barra de navegação -->
+      
+          
+          <!-- Logo -->
+          <a href="" class="navbar-brand">Chalé Hotel</a>
+
+          <!--Menu Hamburguer -->
+          <button class="navbar-toggler" data-toggle="collpase" data-target="#nav-target"> 
+            <!--Criando botão -->
+            <!-- Para aparacer os itens da minha lista devo colocar data-toggle e data-target -->
+                  <span class="navbar-toggler-icon"></span> 
+                  <!--Formatando botão. Aparace a partir de determinado widht da tela -->
+
+          </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target"> <!--Irá colapsar todos os itens da barra de navegação -->
+            <ul class="navbar-nav ml-auto"> <!-- Todos os itens vão para a direita -->
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link dropdown-toggle" data-toogle ="dropdown">Serviços</a> <!--Data-toogle -> me permite formatar formulários -->
+
+                  <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Serviço 1</a>
+                    <a href="" class="dropdown-item">Serviço 2</a>
+                    <a href="" class="dropdown-item">Serviço 3</a>
+                  </div>
+
+
+
+                </li>
+            </ul>
+
+          </div>
+
+        </nav>
+    
+
+    <!--Alinhamentos
+    opções: fixed-top, fixed-bottom, sticky
+    -->
+    <h2>Alinhamentos</h2>
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary"> 
+      <!-- Navbar-expand-Sm -> responsável pela responsividade da barra de navegação -->
+      
+          
+          <!-- Logo -->
+          <a href="" class="navbar-brand">Chalé Hotel</a>
+
+          <!--Menu Hamburguer -->
+          <button class="navbar-toggler" data-toggle="collpase" data-target="#nav-target"> 
+            <!--Criando botão -->
+            <!-- Para aparacer os itens da minha lista devo colocar data-toggle e data-target -->
+                  <span class="navbar-toggler-icon"></span> 
+                  <!--Formatando botão. Aparace a partir de determinado widht da tela -->
+
+          </button>
+
+        <!-- Navegação -->
+        <div class="collapse navbar-collapse" id="nav-target"> <!--Irá colapsar todos os itens da barra de navegação -->
+            <ul class="navbar-nav ml-auto"> <!-- Todos os itens vão para a direita -->
+                <li class="nav-item">
+                  <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link dropdown-toggle" data-toogle ="dropdown">Serviços</a> <!--Data-toogle -> me permite formatar formulários -->
+
+                  <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">Serviço 1</a>
+                    <a href="" class="dropdown-item">Serviço 2</a>
+                    <a href="" class="dropdown-item">Serviço 3</a>
+                  </div>
+
+
+
+                </li>
+            </ul>
+
+          </div>
+
+        </nav>
+    
+    
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
